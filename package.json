@@ -1,0 +1,14 @@
+{
+  "name": "lshapp-design-system",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Shared component library for the Landspítali (LSH) React‑Native app",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "echo \"Workspace ready\"",
+    "build": "echo \"(add build script later)\""
+  }
+}
