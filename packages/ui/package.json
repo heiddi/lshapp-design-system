@@ -1,0 +1,42 @@
+{
+  "name": "ui",
+  "version": "1.0.0",
+  "description": "UI components for React Native",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook-generate": "node scripts/storybook-generate.js",
+    "storybook": "npm run storybook-generate && start-storybook -p 6006",
+    "build-storybook": "npm run storybook-generate && build-storybook"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.11.0",
+  "devDependencies": {
+    "@babel/core": "^7.27.1",
+    "@gorhom/bottom-sheet": "^5.1.4",
+    "@react-native-async-storage/async-storage": "^2.1.2",
+    "@react-native-community/datetimepicker": "^8.3.0",
+    "@react-native-community/slider": "^4.5.6",
+    "@storybook/addon-knobs": "^8.0.1",
+    "@storybook/addon-ondevice-actions": "^8.6.2",
+    "@storybook/addon-ondevice-controls": "^8.6.2",
+    "@storybook/react-native": "^9.0.0-beta.10",
+    "@types/react": "^19.1.4",
+    "@types/react-native": "^0.73.0",
+    "babel-loader": "^8.4.1",
+    "babel-plugin-react-native-web": "^0.20.0",
+    "metro-react-native-babel-preset": "^0.77.0",
+    "react-native-gesture-handler": "^2.25.0",
+    "react-native-reanimated": "^3.17.5",
+    "react-native-safe-area-context": "^5.4.0",
+    "react-native-svg": "^15.12.0",
+    "storybook": "^8.6.12",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-native": "^0.79.2"
+  }
+}
