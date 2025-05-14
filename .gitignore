@@ -1,0 +1,43 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# node & Yarn / PNPM / Bun
+node_modules/
+.pnpm/
+.bun/
+yarn.lock
+pnpm-lock.yaml
+
+# React Native – iOS
+ios/build/
+ios/DerivedData/
+*.xcworkspace
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+Pods/
+*.xcuserstate
+*.xcuserdatad
+
+# React Native – Android
+android/.gradle/
+android/app/build/
+*.keystore
+
+# Expo / EAS
+.expo/
+.expo-shared/
+
+# Bundler output
+dist/
+build/
+
+# Env & secrets
+.env*
+.env.*.local
+
+# Editor & tooling
+.vscode/
+.idea/
+.eslintcache
