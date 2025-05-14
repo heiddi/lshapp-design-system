@@ -1,0 +1,66 @@
+import { Canvas, Meta, Story, ArgsTable } from '@storybook/addon-docs';
+import ButtonPrimary from './ButtonPrimary';
+import * as ButtonPrimaryStories from './ButtonPrimary.stories';
+
+<Meta title="Components/ButtonPrimary" component={ButtonPrimary} />
+
+# ButtonPrimary
+
+The `ButtonPrimary` component is a versatile button that can be used throughout the application for primary actions.
+
+## Usage
+
+```tsx
+import { ButtonPrimary } from 'ui';
+
+function MyComponent() {
+  return (
+    <ButtonPrimary 
+      label="Press Me" 
+      onPress={() => console.log('Button pressed')} 
+    />
+  );
+}
+```
+
+## Props
+
+<ArgsTable of={ButtonPrimary} />
+
+## Examples
+
+### Default (Solid) Button
+
+<Canvas>
+  <Story name="Default" story={ButtonPrimaryStories.Default} />
+</Canvas>
+
+### Outline Button
+
+<Canvas>
+  <Story name="Outline" story={ButtonPrimaryStories.Outline} />
+</Canvas>
+
+### Disabled Buttons
+
+<Canvas>
+  <Story name="Disabled" story={ButtonPrimaryStories.Disabled} />
+</Canvas>
+
+<Canvas>
+  <Story name="OutlineDisabled" story={ButtonPrimaryStories.OutlineDisabled} />
+</Canvas>
+
+### Multiple Variants
+
+<Canvas>
+  <Story name="ButtonVariants" story={ButtonPrimaryStories.ButtonVariants} />
+</Canvas>
+
+## Accessibility
+
+The ButtonPrimary component includes the following accessibility features:
+
+- Has `accessibilityRole="button"` to convey the correct semantics
+- Uses the `label` prop as the `accessibilityLabel` for screen readers
+- Provides appropriate visual feedback for different states (normal, pressed, disabled) 

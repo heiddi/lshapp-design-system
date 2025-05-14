@@ -16,6 +16,7 @@ addDecorator(withKnobs);
 
 // Import your stories
 import './src/components/Button.stories';
+import './src/components/ButtonPrimary.stories';
 
 // Configure Storybook
 configure(() => {
